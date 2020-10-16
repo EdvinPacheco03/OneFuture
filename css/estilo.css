@@ -1,0 +1,511 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    }
+
+    #create{
+        margin-left: 20px;
+    }
+
+   #cosa{
+       margin-left: 200px;
+       margin-top: 150px;
+       background-color: crimson;
+   }
+
+  #tbl{
+     padding-top: 90px;
+ }
+/*
+ .user{
+    float: right;
+	width: 50%;
+	text-align: right;
+	margin-right: 25px;
+ } */
+
+ #ecb{
+     background-color: rgb(63, 63, 238);
+ }
+
+ .delite{
+    text-align: center;
+ }
+ 
+ section {
+    padding: 90px 15px 15px;
+ }
+
+
+
+/*formulario de Venta*/
+.form-horizontal{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/*****/
+
+/*============ Paginador =============*/
+.paginador ul{
+	padding: 15px;
+	list-style: none;
+	background: #FFF;
+	margin-top: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+.paginador a, .pageSelected{
+	color: #428bca;
+	border: 1px solid #ddd;
+	padding: 5px;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	width: 35px;
+}
+.paginador a:hover{
+	background: #ddd;
+}
+.pageSelected{
+	color: #FFF;
+	background: #428bca;
+	border: 1px solid #428bca;
+}
+
+/***************************/
+
+/* Estilos del nav*/
+
+nav{
+    float: left;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+nav ul li a{
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none !important;
+
+}
+
+nav ul li:hover{
+    background: #3ead47;
+}
+   
+.menu_bar {
+    display:none;
+}
+
+.user{
+    float: right;
+    margin: 0px 10px 0px 10px;
+}
+
+/**********************/
+
+
+@media screen and (max-width:950px ) {
+	/*nav responsivo xd*/
+    header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+ 
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+ 
+	.menu_bar .bt-menu  {
+		display:block;
+		padding:10px;
+		background:#024959;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+ 
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+    }
+
+    /** Estilos para el login**/
+    .form-register {
+        width: 350px;
+        padding: 30px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    /* ****************** */
+
+    
+    .btn_btn{
+        margin: 10px 10px 10px 20px !important;
+    }
+
+    .sear{
+        float: left !important;
+        border: 1px #444444 solid;
+        border-radius: 10px;
+        position: relative;
+        margin: 20px 10px 20px 10px !important;
+    }
+
+
+}
+
+
+    /*TABLAS RESPONSIVAS*/
+@media only screen and (max-width: 1024px){
+    #tabla{
+        padding: 1px 1px 3px 1px;
+
+        background: white;
+        border-radius: 8px;
+    }
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin: 0 0 1rem 0;
+    }
+    
+
+
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 50% !important;
+
+    }
+
+    td:before {
+        /* Now like a table header */
+        content: attr(data-th) ": ";
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 0;
+        font-weight: 800;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        line-height: 45px;
+        font-family: 'Lobster', cursive; 
+    /*** Estilos del formulario cliente_venta version mobil**/
+    }
+    .cl{
+        background: #ecffff;
+        font-weight: 700;
+    }
+    .cl input {
+        display:block !important;
+        float:none;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        
+    }
+    .form_search{
+        margin: auto;
+    }
+    /********/
+
+    /** Estilos para el login**/
+    .form-register {
+        width: 350px;
+        padding: 30px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px){
+
+    .sear{
+        float: left !important;
+        border: 1px #444444 solid;
+        border-radius: 10px;
+        position: relative;
+        margin: 20px 10px 20px 10px !important;
+    }
+}
+
+
+
+/*TABLA*/
+
+table{
+    margin: 7px;
+    
+}
+tbody{
+    overflow: hidden;
+}
+
+
+/*============ Ventas ============*/
+.datos_cliente, .datos_venta, .title_page{
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.datos_cliente{ 
+        background: #ecffff;
+        font-weight: 700;
+}
+
+#detalle_venta tr{
+	background-color: #FFF !important;
+}
+#detalle_venta td{
+	border-bottom: 1px solid #CCC;
+}
+.datos{
+	background-color: #b3f1e4;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid #78909C;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.action_tit{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+
+
+.datos label{
+    margin: 5px auto;
+    text-align: center;
+}
+
+.wd30{
+	width: 30%;
+}
+
+.wd100{
+	width: 100%;
+}
+#div_registro_cliente, #add_product_venta{
+	display: none;
+}
+.displayN{
+	display: none;
+}
+.tbl_venta{
+	max-width: 900px;
+	margin: auto;
+}
+.tbl_venta tfoot td{
+	font-weight: bold;
+}
+.textright{
+	text-align: right;
+}
+.textcenter{
+	text-align: center;
+}
+.textleft{
+	text-align: left;
+}
+.btn_anular, .btn_save{
+	background-color: #f36a6a;
+	margin-left: 15px;
+    border-radius: 4px;
+    padding: 5px;
+    color: black;
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+.btn_view, .btn_new_cliente, #btn_facturar_venta{
+    background-color: #3ead47;
+    margin-left: 15px;
+    border-radius: 4px;
+    padding: 5px;
+    color: black;
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+input{
+    border-radius: 5px;
+
+}
+
+.form_group{
+	padding: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 10px;
+	margin: auto;
+}
+
+.form_group label{
+	margin: 0 10px;
+}
+
+.form_group input{
+	width: auto;
+}
+
+.btn_btn{
+	background-color: rgb(32, 199, 17);
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+    padding: 4px 4px !important;
+    height: 36px;
+	margin-top: 25px;
+	color: cornsilk;
+}
+
+.btn_busc{
+	background-color: rgb(32, 199, 17);
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+    padding: 4px 4px !important;
+    height: 36px;
+	margin-top: 10px;
+	color: cornsilk;
+}
+
+
+.busc{
+    margin-right: 30px;
+}
+
+.h5{
+    padding-top: 10px;
+    font-family: 'lobster', cursive;
+}
+
+.pagada, .anulada{
+    color: #FFF;
+    background: #60a756;
+    text-align: center;
+    border-radius: 5px;
+    padding: 4px 15px;
+}
+.anulada{
+    background: #f36a6a;
+}
+.inactive{
+    background-color: #444444;
+    color: #CCC;
+    cursor: default;
+}
+
+/**************BUSCADOR**************/
+.form_search{
+	display: flex;
+	float: right;
+	background: initial;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.form_search label{
+    margin: 0 10px;
+    font-weight: 800;
+    font-family: sans-serif, 'cursive';
+}
+
+.sear{
+    float: right;
+    border: 1px #444444 solid;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -40px;
+}
+
+.inp{
+    margin: 10px 10px 10px 20px;
+}
+
+.resultado{
+    margin: auto;
+    margin-top: 40px;
+    width: 1000px;
+}
+
+/*********Estilos de las cards del Inicio*/
+.carts{
+    margin: auto;
+    padding: 10px;
+}
+
+.views{
+    margin: auto;
+    text-align: center;
+}
+
+.cont{
+    margin: auto !important;
+}
